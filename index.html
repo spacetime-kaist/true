@@ -6,6 +6,11 @@
     <title>Redirecting...</title>
     <!-- Redirect after 3 seconds -->
     <meta http-equiv="refresh" content="3; url=https://spacetime.kaist.ac.kr/">
+    <script>
+      const next = new URL(window.location.href);
+      next.hostname = "spacetime.kaist.ac.kr";
+      window.location.replace(next.toString());
+    </script>
 </head>
 <body>
     <h1>Redirecting...</h1>
